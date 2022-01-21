@@ -11,6 +11,10 @@
     --text-base-size: 1em;
     --text-scale-ratio: 1.25;
 
+    /*Line Height*/
+    --heading-line-height: 1.25;
+    --body-line-height: 1.75;
+
     /*Type Scale*/
     --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-sm: calc(1em / var(--text-scale-ratio));
@@ -24,10 +28,12 @@
 body {
     font-family: var(--font-primary);
     font-size: var(--text-base-size);
+    line-height: var(--body-line-height);
 }
 
 h1, h2, h3, h4, h5, .text-xxxl {
     font-family: var(--font-secondary);
+    line-height: var(--heading-line-height);
 }
 nav {
     font-family: var(--font-tertiary);

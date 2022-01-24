@@ -6,7 +6,6 @@ body {
 #main {
     font-family: Arial, Helvetica, sans-serif;
     width: 960px;
-    height: 100vh;
     padding: 30px;
     margin: 0 auto;
     background-color: white;
@@ -14,24 +13,71 @@ body {
 #header h1 {
     text-align: center;
 }
-#merriweather {
+.merriweather {
     font-family: var(--font-primary);
 }
-#merriweather :nth-child(3) {
+#primary-font :nth-child(3) {
     font-weight: bold;
 }
-#merriweather :last-child {
+#primary-font :last-child {
     font-style: italic;
 }
-#open-sans {
+.open-sans {
     font-family: var(--font-secondary);
 }
-#open-sans :last-child {
+#secondary-font :last-child {
     font-style: italic;
 }
-#montserrat {
+#tertiary-font {
     font-family: var(--font-tertiary);
 }
-#montserrat :last-child {
+#tertiary-font :last-child {
     font-style: italic;
+}
+#text-sizes :nth-child(1) {
+    font-size: var(--text-xxxl);
+}
+#text-sizes :nth-child(2) {
+    font-size: var(--text-xxl);
+}
+#text-sizes :nth-child(3) {
+    font-size: var(--text-xl);
+}
+#text-sizes :nth-child(4) {
+    font-size: var(--text-lg);
+}
+#text-sizes :nth-child(5) {
+    font-size: var(--text-md);
+}
+#text-sizes :nth-child(6) {
+    font-size: var(--text-sm);
+}
+#text-sizes :nth-child(7) {
+    font-size: var(--text-xs);
+}
+#paragraph {
+    width: 600px;
+}
+#paragraph :first-child {
+    font-size: var(--text-xxxl);
+    margin-bottom: 12px;
+}
+#paragraph p {
+    line-height: var(--body-line-height);
+    text-align: justify;
+}
+#paragraph :nth-child(4) {
+    font-size: var(--text-xxl);
+}
+#paragraph :nth-child(7) {
+    font-size: var(--text-xl);
+}
+#paragraph :nth-child(10) {
+    font-size: var(--text-lg);
+}
+#paragraph :last-child {
+    font-size: var(--text-md);
+}
+.heading {
+    margin-bottom: 12px;
 }

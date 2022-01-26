@@ -1,18 +1,28 @@
 @import url('./design/typography.css');
+@import url('./design/color.css');
 
-body {
-    background-color: #f5f8fa;
+html {
+    box-sizing: border-box;
 }
+*, *:before, *::after {
+    box-sizing: inherit;
+}
+/* body {
+    background-color: var(--primary-color-black);
+} */
 #main {
     font-family: Arial, Helvetica, sans-serif;
     width: 960px;
     padding: 30px;
     margin: 0 auto;
-    background-color: white;
+    /* background-color: var(--primary-color-white); */
+    /* color: var(--primary-color-white); */
 }
 #header h1 {
     text-align: center;
 }
+
+/*Typography Section*/
 .merriweather {
     font-family: var(--font-primary);
 }
@@ -80,4 +90,32 @@ body {
 }
 .heading {
     margin-bottom: 12px;
+    color: var(--secondary-color-blue);
+}
+
+/*Color Section*/
+#color div span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#color div :nth-child(2) {
+    background-color: var(--primary-color-white);
+    outline: 1px solid rgb(223, 223, 223);
+}
+#color div :nth-child(3) {
+    background-color: var(--primary-color-black);
+}
+#color div :nth-child(4) {
+    background-color: var(--primary-color-blue);
+}
+#color :last-child :nth-child(2) {
+    background-color: var(--secondary-color-mid-gray);
+}
+#color :last-child :nth-child(3) {
+    background-color: var(--secondary-color-mid-black);
+}
+#color :last-child :nth-child(4) {
+    background-color: var(--secondary-color-gray);
+    outline: 1px solid rgb(223, 223, 223);
 }

@@ -1,121 +1,199 @@
-@import url('./design/typography.css');
-@import url('./design/color.css');
+@import url("./design/typography.css");
+@import url("./design/color.css");
+@import url("./design/spacing.css");
 
+/*Global Styles*/
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
 }
-*, *:before, *::after {
-    box-sizing: inherit;
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
 }
+
 /* body {
     background-color: var(--primary-color-black);
 } */
 #main {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 960px;
-    padding: 30px;
-    margin: 0 auto;
-    /* background-color: var(--primary-color-white); */
-    /* color: var(--primary-color-white); */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 960px;
+  padding: 30px;
+  margin: 0 auto;
+  /* background-color: var(--primary-color-white); */
+  /* color: var(--primary-color-white); */
 }
+
 #header h1 {
-    text-align: center;
+  text-align: center;
 }
+
 
 /*Typography Section*/
 .merriweather {
-    font-family: var(--font-primary);
+  font-family: var(--font-primary);
 }
-#primary-font :nth-child(3) {
-    font-weight: bold;
-}
-#primary-font :last-child {
-    font-style: italic;
-}
+
 .open-sans {
-    font-family: var(--font-secondary);
+  font-family: var(--font-secondary);
 }
+
+#primary-font :nth-child(3) {
+  font-weight: bold;
+}
+
+#primary-font :last-child {
+  font-style: italic;
+}
+
 #secondary-font :last-child {
-    font-style: italic;
+  font-style: italic;
 }
+
 #tertiary-font {
-    font-family: var(--font-tertiary);
+  font-family: var(--font-tertiary);
 }
+
 #tertiary-font :last-child {
-    font-style: italic;
+  font-style: italic;
 }
+
 #text-sizes :nth-child(1) {
-    font-size: var(--text-xxxl);
+  font-size: var(--text-xxxl);
+  margin-top: var(--space-xs);
 }
+
 #text-sizes :nth-child(2) {
-    font-size: var(--text-xxl);
+  font-size: var(--text-xxl);
 }
+
 #text-sizes :nth-child(3) {
-    font-size: var(--text-xl);
+  font-size: var(--text-xl);
 }
+
 #text-sizes :nth-child(4) {
-    font-size: var(--text-lg);
+  font-size: var(--text-lg);
 }
+
 #text-sizes :nth-child(5) {
-    font-size: var(--text-md);
+  font-size: var(--text-md);
 }
+
 #text-sizes :nth-child(6) {
-    font-size: var(--text-sm);
+  font-size: var(--text-sm);
 }
+
 #text-sizes :nth-child(7) {
-    font-size: var(--text-xs);
+  font-size: var(--text-xs);
 }
+
 #paragraph {
-    width: 600px;
+  width: 600px;
 }
+
 #paragraph :first-child {
-    font-size: var(--text-xxxl);
-    margin-bottom: 12px;
+  font-size: var(--text-xxxl);
+  /* margin-bottom: 12px; */
+  margin: var(--space-xs) 0;
 }
+
 #paragraph p {
-    line-height: var(--body-line-height);
-    text-align: justify;
+  line-height: var(--body-line-height);
+  text-align: justify;
 }
+
 #paragraph :nth-child(4) {
-    font-size: var(--text-xxl);
+  font-size: var(--text-xxl);
 }
+
 #paragraph :nth-child(7) {
-    font-size: var(--text-xl);
+  font-size: var(--text-xl);
 }
+
 #paragraph :nth-child(10) {
-    font-size: var(--text-lg);
+  font-size: var(--text-lg);
 }
+
 #paragraph :last-child {
-    font-size: var(--text-md);
+  font-size: var(--text-md);
 }
+
 .heading {
-    margin-bottom: 12px;
-    color: var(--secondary-color-blue);
+  margin-bottom: 12px;
+  color: var(--secondary-color-blue);
 }
 
 /*Color Section*/
-#color div span {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+#color .container span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
-#color div :nth-child(2) {
-    background-color: var(--primary-color-white);
-    outline: 1px solid rgb(223, 223, 223);
+
+#color .container :nth-child(1) {
+  font-weight: 700;
 }
-#color div :nth-child(3) {
-    background-color: var(--primary-color-black);
+
+#color .container :nth-child(2) {
+  background-color: var(--primary-color-white);
+  outline: 1px solid rgb(223, 223, 223);
 }
-#color div :nth-child(4) {
-    background-color: var(--primary-color-blue);
+
+#color .container :nth-child(3) {
+  background-color: var(--primary-color-black);
 }
+
+#color .container :nth-child(4) {
+  background-color: var(--primary-color-blue);
+}
+
 #color :last-child :nth-child(2) {
-    background-color: var(--secondary-color-mid-gray);
+  background-color: var(--secondary-color-mid-gray);
 }
+
 #color :last-child :nth-child(3) {
-    background-color: var(--secondary-color-mid-black);
+  background-color: var(--secondary-color-mid-black);
 }
+
 #color :last-child :nth-child(4) {
-    background-color: var(--secondary-color-gray);
-    outline: 1px solid rgb(223, 223, 223);
+  background-color: var(--secondary-color-gray);
+  outline: 1px solid rgb(223, 223, 223);
+}
+
+/*Spacing (Margin & Padding) Section*/
+#spacing .container :nth-child(n) {
+  text-align: center;
+  color: white;
+  background-color: #1538af;
+  margin: 5px;
+}
+
+#spacing .container :nth-child(1) {
+  width: var(--space-xs);
+}
+
+#spacing .container :nth-child(2) {
+  width: var(--space-sm);
+}
+
+#spacing .container :nth-child(3) {
+  width: var(--space-md);
+}
+
+#spacing .container :nth-child(4) {
+  width: var(--space-lg);
+}
+
+#spacing .container :nth-child(5) {
+  width: var(--space-xl);
+}
+
+#spacing .container :nth-child(6) {
+    width: var(--space-xxl);
+}
+
+#spacing .container :nth-child(7) {
+    width: var(--space-xxxl);
 }

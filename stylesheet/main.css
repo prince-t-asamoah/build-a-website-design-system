@@ -1,6 +1,7 @@
 @import url("./design/typography.css");
 @import url("./design/color.css");
 @import url("./design/spacing.css");
+@import url('/stylesheet/design/grid.css');
 
 /*Global Styles*/
 html {
@@ -104,7 +105,6 @@ body {
 
 #paragraph :nth-child(1){
   font-size: var(--text-7);
-  /* margin-bottom: 12px; */
   margin: var(--area-1) 0;
 }
 
@@ -205,4 +205,13 @@ body {
 
 #spacing .container :nth-child(8) {
   width: var(--area-8);
+}
+
+/*Grid Section*/
+#grid .column {
+  text-align: center;
+  color: white;
+  background-color: #1538af;
+  padding: calc(var(--area-1) / 2);
+  margin: calc(var(--area-1) / 2);
 }

@@ -5,7 +5,6 @@
 /*Global Styles*/
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
 *,
@@ -14,9 +13,10 @@ html {
   box-sizing: inherit;
 }
 
-/* body {
-    background-color: var(--primary-color-black);
-} */
+body {
+    /* background-color: var(--primary-color-black); */
+  font-size: var(--text-md);
+}
 #main {
   font-family: Arial, Helvetica, sans-serif;
   width: 960px;
@@ -61,42 +61,40 @@ html {
 }
 
 #text-sizes :nth-child(1) {
-  font-size: var(--text-xxxl);
-  margin-top: var(--space-xs);
+  font-size: var(--text-8);
+  margin-top: var(--area-1);
 }
 
 #text-sizes :nth-child(2) {
-  font-size: var(--text-xxl);
+  font-size: var(--text-7);
 }
 
 #text-sizes :nth-child(3) {
-  font-size: var(--text-xl);
+  font-size: var(--text-6);
 }
 
 #text-sizes :nth-child(4) {
-  font-size: var(--text-lg);
+  font-size: var(--text-5);
 }
 
 #text-sizes :nth-child(5) {
-  font-size: var(--text-md);
+  font-size: var(--text-4);
 }
 
 #text-sizes :nth-child(6) {
-  font-size: var(--text-sm);
+  font-size: var(--text-3);
 }
 
 #text-sizes :nth-child(7) {
-  font-size: var(--text-xs);
+  font-size: var(--text-2);
+}
+
+#text-sizes :nth-child(8) {
+  font-size: var(--text-1);
 }
 
 #paragraph {
   width: 600px;
-}
-
-#paragraph :first-child {
-  font-size: var(--text-xxxl);
-  /* margin-bottom: 12px; */
-  margin: var(--space-xs) 0;
 }
 
 #paragraph p {
@@ -104,20 +102,27 @@ html {
   text-align: justify;
 }
 
+#paragraph :nth-child(1){
+  font-size: var(--text-7);
+  /* margin-bottom: 12px; */
+  margin: var(--area-1) 0;
+}
+
+
 #paragraph :nth-child(4) {
-  font-size: var(--text-xxl);
+  font-size: var(--text-6);
 }
 
 #paragraph :nth-child(7) {
-  font-size: var(--text-xl);
+  font-size: var(--text-5);
 }
 
 #paragraph :nth-child(10) {
-  font-size: var(--text-lg);
+  font-size: var(--text-4);
 }
 
-#paragraph :last-child {
-  font-size: var(--text-md);
+#paragraph :nth-child(13) {
+  font-size: var(--text-3);
 }
 
 .heading {
@@ -171,29 +176,33 @@ html {
 }
 
 #spacing .container :nth-child(1) {
-  width: var(--space-xs);
+  width: var(--area-1);
 }
 
 #spacing .container :nth-child(2) {
-  width: var(--space-sm);
+  width: var(--area-2);
 }
 
 #spacing .container :nth-child(3) {
-  width: var(--space-md);
+  width: var(--area-3);
 }
 
 #spacing .container :nth-child(4) {
-  width: var(--space-lg);
+  width: var(--area-4);
 }
 
 #spacing .container :nth-child(5) {
-  width: var(--space-xl);
+  width: var(--area-5);
 }
 
 #spacing .container :nth-child(6) {
-    width: var(--space-xxl);
+    width: var(--area-6);
 }
 
 #spacing .container :nth-child(7) {
-    width: var(--space-xxxl);
+    width: var(--area-7);
+}
+
+#spacing .container :nth-child(8) {
+  width: var(--area-8);
 }

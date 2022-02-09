@@ -1,0 +1,71 @@
+/*Global Variable*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Montserrat:wght@700&family=Open+Sans:wght@700&display=swap');
+
+:root {
+    /*Base Values*/
+    --base-size: 1em;
+    --base-ratio: 1.25;
+    --body-line-height: 1.75;
+
+    /*Base Scale*/
+    --size-1: calc(var(--base-size) / var(--base-ratio) / var(--base-ratio));
+    --size-2: calc(var(--base-size) / var(--base-ratio));
+    --size-3: calc(var(--base-size));
+    --size-4: calc(var(--base-size) * var(--base-ratio));
+    --size-5: calc(var(--base-size) * var(--base-ratio) * var(--base-ratio));
+    --size-6: calc(var(--base-size) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio));
+    --size-7: calc(var(--base-size) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio));
+    --size-8: calc(var(--base-size) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio));
+    --size-9: calc(var(--base-size) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio) * var(--base-ratio));
+    
+    /*1. Typography*/
+    --font-primary: Merriweather, Georgia, serif;
+    --font-secondary: 'Open Sans', 'Arial black', sans-serif;
+    --font-tertiary: Montserrat, Impact, sans-serif;
+
+    --text-1: var(--size-1);
+    --text-2: var(--size-2);
+    --text-3: var(--size-3);
+    --text-4: var(--size-4);
+    --text-5: var(--size-5);
+    --text-6: var(--size-6);
+    --text-7: var(--size-7);
+    --text-8: var(--size-8);
+    --text-9: var(--size-9);
+
+    /* 2. Spatial*/
+    --area-1: var(--size-1);
+    --area-2: calc(var(--size-2) * 2);
+    --area-3: calc(var(--size-3) * 3);
+    --area-4: calc(var(--size-4) * 4);
+    --area-5: calc(var(--size-5) * 5);
+    --area-6: calc(var(--size-6) * 6);
+    --area-7: calc(var(--size-7) * 7);
+    --area-8: calc(var(--size-8) * 8);
+    --area-9: calc(var(--size-9) * 9);
+
+    /*3. Color*/
+    --flat-wisteria: #8e44ad;
+    --flat-belize-hole: #2980b9;
+    --white: #fff;
+    --flat-midnight-blue: #2c3e50;
+    --flat-asbestos: #7f8c8d;
+    --flat-silver: #bdc3c7;
+    --flat-cloud: #ecf0f1;
+}
+  /*Responsive Grid*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+.column {
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}

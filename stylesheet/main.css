@@ -1,7 +1,9 @@
-@import url("./design/typography.css");
+/* @import url("./design/typography.css");
 @import url("./design/color.css");
 @import url("./design/spacing.css");
-@import url('/stylesheet/design/grid.css');
+@import url('/design/grid.css'); */
+
+@import url('./design-system.css');
 
 /*Global Styles*/
 html {
@@ -15,16 +17,16 @@ html {
 }
 
 body {
-    /* background-color: var(--primary-color-black); */
-  font-size: var(--text-md);
+  background-color: var(--flat-silver);
+  font-size: var(--text-3);
 }
+
 #main {
   font-family: Arial, Helvetica, sans-serif;
-  width: 960px;
-  padding: 30px;
+  max-width: 80%;
+  padding: var(--area-3);
   margin: 0 auto;
-  /* background-color: var(--primary-color-white); */
-  /* color: var(--primary-color-white); */
+  background-color: var(--white);
 }
 
 #header h1 {
@@ -62,40 +64,40 @@ body {
 }
 
 #text-sizes :nth-child(1) {
-  font-size: var(--text-8);
+  font-size: var(--text-9);
   margin-top: var(--area-1);
 }
 
 #text-sizes :nth-child(2) {
-  font-size: var(--text-7);
+  font-size: var(--text-8);
 }
 
 #text-sizes :nth-child(3) {
-  font-size: var(--text-6);
+  font-size: var(--text-7);
 }
 
 #text-sizes :nth-child(4) {
-  font-size: var(--text-5);
+  font-size: var(--text-6);
 }
 
 #text-sizes :nth-child(5) {
-  font-size: var(--text-4);
+  font-size: var(--text-5);
 }
 
 #text-sizes :nth-child(6) {
-  font-size: var(--text-3);
+  font-size: var(--text-4);
 }
 
 #text-sizes :nth-child(7) {
-  font-size: var(--text-2);
+  font-size: var(--text-3);
 }
 
 #text-sizes :nth-child(8) {
-  font-size: var(--text-1);
+  font-size: var(--text-2);
 }
 
-#paragraph {
-  width: 600px;
+#text-sizes :nth-child(9) {
+  font-size: var(--text-1);
 }
 
 #paragraph p {
@@ -105,7 +107,7 @@ body {
 
 #paragraph :nth-child(1){
   font-size: var(--text-7);
-  margin: var(--area-1) 0;
+  margin: calc(var(--area-1) / 2) 0;
 }
 
 
@@ -126,8 +128,7 @@ body {
 }
 
 .heading {
-  margin-bottom: 12px;
-  color: var(--secondary-color-blue);
+  margin-bottom: var(--area-1);
 }
 
 /*Color Section*/
@@ -141,29 +142,34 @@ body {
   font-weight: 700;
 }
 
-#color .container :nth-child(2) {
-  background-color: var(--primary-color-white);
+#color .base-color :nth-child(2) {
+  background-color: var(--flat-wisteria);
+}
+
+#color .base-color :nth-child(3) {
+  background-color: var(--flat-belize-hole);
+}
+
+#color .base-color :nth-child(4) {
+  background-color: var(--white);
+  border: 1px solid var(--flat-silver);
+}
+
+#color .greyscale-color :nth-child(2) {
+  background-color: var(--flat-cloud);
+}
+
+#color .greyscale-color :nth-child(3) {
+  background-color: var(--flat-silver);
+}
+
+#color .greyscale-color :nth-child(4) {
+  background-color: var(--flat-asbestos);
   outline: 1px solid rgb(223, 223, 223);
 }
 
-#color .container :nth-child(3) {
-  background-color: var(--primary-color-black);
-}
-
-#color .container :nth-child(4) {
-  background-color: var(--primary-color-blue);
-}
-
-#color :last-child :nth-child(2) {
-  background-color: var(--secondary-color-mid-gray);
-}
-
-#color :last-child :nth-child(3) {
-  background-color: var(--secondary-color-mid-black);
-}
-
-#color :last-child :nth-child(4) {
-  background-color: var(--secondary-color-gray);
+#color .greyscale-color :nth-child(5) {
+  background-color: var(--flat-midnight-blue);
   outline: 1px solid rgb(223, 223, 223);
 }
 
@@ -184,27 +190,31 @@ body {
 }
 
 #spacing .container :nth-child(3) {
-  width: var(--area-3);
+  max-width: var(--area-3);
 }
 
 #spacing .container :nth-child(4) {
-  width: var(--area-4);
+  max-width: var(--area-4);
 }
 
 #spacing .container :nth-child(5) {
-  width: var(--area-5);
+  max-width: var(--area-5);
 }
 
 #spacing .container :nth-child(6) {
-    width: var(--area-6);
+    max-width: var(--area-6);
 }
 
 #spacing .container :nth-child(7) {
-    width: var(--area-7);
+    max-width: var(--area-7);
 }
 
 #spacing .container :nth-child(8) {
-  width: var(--area-8);
+  max-width: var(--area-8);
+}
+
+#spacing .container :nth-child(9) {
+  max-width: var(--area-9);
 }
 
 /*Grid Section*/
@@ -213,5 +223,5 @@ body {
   color: white;
   background-color: #1538af;
   padding: calc(var(--area-1) / 2);
-  margin: calc(var(--area-1) / 2);
+  margin: calc(var(--area-1) / 4);
 }

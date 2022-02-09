@@ -2,4 +2,4 @@
 stylesheet/design
 
 #Gitignore
-.gitignore
+*.gitignore
